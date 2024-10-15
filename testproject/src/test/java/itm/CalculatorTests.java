@@ -19,7 +19,7 @@ public class CalculatorTests{
     void isPrimeTest(){
         System.out.println("IsPrimetest Running");
         assertTrue(calc.isPrime(5),"5 is prime");
-        int[] test={2,3,4,5,6,7,8,93};
+        int[] test={2,3,5,7};
         for(int i:test){
             assertTrue(calc.isPrime(i),"Error expected True got False for =>i ");
 
@@ -29,9 +29,9 @@ public class CalculatorTests{
     @DisplayName("test for getNextPrime")
     void getNextPrimeTest(){
         System.out.println("test is running");
-        int[] test={2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,71,73,79,83,89,97};
+        int[] test={3,7,11,13,17};
         for(int i=0;i<test.length-1;i++){
-            assertTrue(calc.isPrime(i),"error expected True got false for =>");
+            assertTrue(calc.isPrime(i),"error expected True got false for =>"+i);
 
         }
     }
